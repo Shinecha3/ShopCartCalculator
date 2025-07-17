@@ -50,7 +50,7 @@ public class ShoppingCartManualTest {
 
         // Test 4: คำนวณแบบ มีส่วนลด BOGO
         ArrayList<CartItem> bogoCart = new ArrayList<>();
-        bogoCart.add(new CartItem("BOGO", "Bread", 25.0, 2)); // 2ลด1 = 1*25 ==50
+        bogoCart.add(new CartItem("BOGO", "Bread", 25.0, 2)); // 2ลด1 = 1*25 ==25
         bogoCart.add(new CartItem("BOGO", "Milk", 15.0, 1));      // 15
         double total4 = ShoppingCartCalculator.calculateTotalPrice(bogoCart);
         if (total4 == 40.0) {
